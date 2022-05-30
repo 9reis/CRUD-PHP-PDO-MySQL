@@ -10,4 +10,13 @@
     <title>Site de vagas</title>
 
 </head>
-<body>
+<body class="bg-dark text-light">
+
+    <div class="container">
+
+        <div class="jumbotron bg-danger p-3">
+            <h1> Vagas </h1>
+            <p> Exemplo de CRUD com PHO Orientado a Objeto </p>
+
+        </div>
+    
