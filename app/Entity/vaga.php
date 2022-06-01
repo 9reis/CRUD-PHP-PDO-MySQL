@@ -19,7 +19,18 @@ class Vaga{
     //Data de publicaçã oda vaga
 
     public $data;
-    
 
+    //Metodo responsavel por cadastar a nova vaga no banco
+    public function cadastrar(){
+
+        // Definir a data 
+        $this->data = date('Y-m-d H:i:s');
+        // Inserir a vaga no banco
+
+        // Atribuir Id da VAGA NA INSTANCIA 
+
+        //RETORNAR SUCESSO 
+
+    }
 }
 
