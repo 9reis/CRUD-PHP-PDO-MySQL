@@ -5,16 +5,18 @@
         </a>
     </section>
 
-    <h2 class="mt-4">Cadastrar Vaga</h2>
+    <h2 class="mt-4"> <?php TITLE ?> </h2>
     <form action="" method="POST">
         <div class="form-group">
             <label>Titulo</label>
-            <input type="text" name="titulo" class="form-control">
+            <input type="text" name="titulo" class="form-control" value="<?php $obVaga->titulo ?>">
         </div>
 
         <div class="form-group">
             <label>Descrição</label>
-            <textarea class="form-control" name="descricao" rows="5"></textarea>
+            <textarea class="form-control" name="descricao" rows="5">
+            <?php $obVaga->descricao ?>
+            </textarea>
         </div>
 
         <div class="form-group">
@@ -29,7 +31,8 @@
 
                 <div class="form-check form-check-inline ml-2 ">
                     <label class="form-control">
-                    <input type="radio" name="ativo" value="n">Inativo
+                    <input type="radio" name="ativo" value="n" 
+                    <?php $obVaga == 'n' ?'checked' : ''?> >Inativo
                 </label>
                 </div>
             </div>
